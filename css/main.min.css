@@ -54,3 +54,19 @@ body { background: #000; }
 .Modal_image { margin: auto; width: 80%; background: url("../image/pexels-miftah-rafli-hidayat-4858163.jpg"); background-position: center; background-size: contain; background-repeat: no-repeat; object-fit: cover; height: 90%; }
 
 .Modal_Close { color: #fff; position: absolute; top: 5%; right: 5%; font-size: 6rem; cursor: pointer; }
+
+.Services { width: 100%; height: 90vh; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); grid-gap: 6rem; padding: 7rem 6rem; }
+
+.Services_item { padding: 2rem 3rem; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; color: #fff; background: #262626; transition: transform 0.3s ease; cursor: pointer; }
+
+.Services_item:hover { border-radius: 10px; transform: scale(1.05, 1.05); transition: transform 0.3s ease; }
+
+.Services_item:hover .Services_item_Icon { transform: scale(1.2, 1.2); transition: transform 0.3s ease; }
+
+.Services_item_Icon { width: 6rem; margin-bottom: 3rem; transition: transform 0.3s ease; }
+
+.Services_item_haeding { font-size: 3rem; margin-bottom: 2rem; text-transform: uppercase; }
+
+.Services_item_text { font-size: 1.5remd; text-align: center; padding: 1rem 2rem; }
+
+.Services_item_price { font-size: 2.2rem; font-weight: 800; color: #20c997; margin-top: 1.5rem; }

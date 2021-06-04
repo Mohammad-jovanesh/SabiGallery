@@ -1,0 +1,51 @@
+.Services{
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 6rem;
+    padding: 7rem 6rem;
+    &_item{
+        padding: 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        color: #fff;
+        background: #262626;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        &:hover{
+          border-radius: 10px;
+          transform: scale(1.05,1.05);
+          transition: transform 0.3s ease;
+        }
+        &:hover &_Icon{
+          transform: scale(1.2,1.2);
+          transition: transform 0.3s ease;
+
+        }
+     &_Icon{
+             width: 6rem;
+            margin-bottom: 3rem;
+            transition: transform 0.3s ease;
+      }
+      &_haeding{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+      }
+      &_text{
+        font-size: 1.5remd;
+        text-align: center;
+        padding: 1rem 2rem;
+      }
+      &_price{
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: #20c997;
+        margin-top: 1.5rem;
+      }
+    }
+}

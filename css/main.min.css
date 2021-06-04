@@ -12,7 +12,7 @@ body { background: #000; }
 
 .Pre_load_close { opacity: 0 !important; pointer-events: none !important; transition: all 0.5s ease-in-out; }
 
-.Container { display: none; }
+.Container { display: none; overflow: hidden; }
 
 .header { width: 100%; min-height: 10vh; padding: 5rem 3rem 1rem; display: flex; align-items: center; justify-content: space-between; }
 
@@ -38,6 +38,8 @@ body { background: #000; }
 
 #hero_gallery .column { flex: 1 1 30%; padding: 0rem 2rem; }
 
+#hero_gallery .column [data-src] { min-width: 50px; min-height: 50px; }
+
 #hero_gallery .column img { width: 100%; margin: 1rem auto; filter: brightness(100%) grayscale(100%); cursor: pointer; transition: filter 0.2s linear; opacity: 0; }
 
 #hero_gallery .column img:hover { filter: brightness(100%) grayscale(0%); transform: scale(1.01, 1.02); transition: filter 0.2s linear; }
@@ -46,3 +48,9 @@ body { background: #000; }
     transform: translateY(100px); }
   to { opacity: 1;
     transform: translateY(0); } }
+
+.Modal { width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.8); position: fixed; top: 0; left: 0; z-index: 500; display: none; }
+
+.Modal_image { margin: auto; width: 80%; background: url("../image/pexels-miftah-rafli-hidayat-4858163.jpg"); background-position: center; background-size: contain; background-repeat: no-repeat; object-fit: cover; height: 90%; }
+
+.Modal_Close { color: #fff; position: absolute; top: 5%; right: 5%; font-size: 6rem; cursor: pointer; }

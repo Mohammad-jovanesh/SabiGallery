@@ -1,0 +1,50 @@
+.header{
+    
+    width: 100%;
+    min-height: 10vh;
+    padding: 5rem 3rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .Logo{
+        flex: 1 1 30rem;
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 800;
+    }
+    .nav{
+        flex: 1 1 30rem;
+        text-align: center;
+        text-transform: uppercase;
+        .nav_list{
+            .nav_item{
+                display: inline-block;
+                &:not(:nth-child(1)){
+                    margin-left:2rem ;
+                }
+                .nav_link{
+                    font-size: 2rem;
+                    color: #fff;
+                    &:hover{
+                        @include color_hover_link;
+                    }
+
+                }
+            }
+        }
+    }
+    .Social{
+        flex: 1 1 30rem;
+        text-align: right;
+        padding-right: 5rem;
+        .Social_link{
+            font-size: 3rem;
+            color: #fff;
+            margin-right: 2rem;
+            &:hover{
+                @include color_hover_link;
+            }
+        }
+    }
+}

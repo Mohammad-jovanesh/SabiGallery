@@ -1,0 +1,39 @@
+#hero_gallery{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10rem 1rem 1rem;
+    flex-wrap: wrap;
+    .column{
+        flex:1 1 30%;
+        padding: 0rem 2rem;
+        img{
+            width: 100%;
+            margin: 1rem auto;
+            filter: brightness(100%) grayscale(100%);
+            cursor: pointer;
+            transition: filter 0.2s linear ;
+            opacity: 0;
+            
+            &:hover{
+                filter: brightness(100%) grayscale(0%);
+                transform: scale(1.01,1.02);
+                transition: filter 0.2s linear;
+            }
+        }
+    }
+}
+
+@keyframes AnimeImage {
+    from{
+        opacity: 0;
+        transform: translateY(+100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-0);
+    }
+    
+}

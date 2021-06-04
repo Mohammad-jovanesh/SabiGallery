@@ -1,0 +1,48 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+
+html { font-size: 62.5%; }
+
+a { text-decoration: none; color: #000; }
+
+ul { list-style: none; }
+
+body { background: #000; }
+
+.Pre_Loader { width: 100%; height: 100vh; background: red; position: fixed; z-index: 2000; overflow: hidden; }
+
+.Pre_load_close { opacity: 0 !important; pointer-events: none !important; transition: all 0.5s ease-in-out; }
+
+.Container { display: none; }
+
+.header { width: 100%; min-height: 10vh; padding: 5rem 3rem 1rem; display: flex; align-items: center; justify-content: space-between; }
+
+.header .Logo { flex: 1 1 30rem; color: #fff; font-size: 3rem; font-weight: 800; }
+
+.header .nav { flex: 1 1 30rem; text-align: center; text-transform: uppercase; }
+
+.header .nav .nav_list .nav_item { display: inline-block; }
+
+.header .nav .nav_list .nav_item:not(:nth-child(1)) { margin-left: 2rem; }
+
+.header .nav .nav_list .nav_item .nav_link { font-size: 2rem; color: #fff; }
+
+.header .nav .nav_list .nav_item .nav_link:hover { color: #8d8c8c; transition: color 0.5s ease; }
+
+.header .Social { flex: 1 1 30rem; text-align: right; padding-right: 5rem; }
+
+.header .Social .Social_link { font-size: 3rem; color: #fff; margin-right: 2rem; }
+
+.header .Social .Social_link:hover { color: #8d8c8c; transition: color 0.5s ease; }
+
+#hero_gallery { width: 100%; min-height: 90vh; display: flex; align-items: flex-start; justify-content: space-between; padding: 10rem 1rem 1rem; flex-wrap: wrap; }
+
+#hero_gallery .column { flex: 1 1 30%; padding: 0rem 2rem; }
+
+#hero_gallery .column img { width: 100%; margin: 1rem auto; filter: brightness(100%) grayscale(100%); cursor: pointer; transition: filter 0.2s linear; opacity: 0; }
+
+#hero_gallery .column img:hover { filter: brightness(100%) grayscale(0%); transform: scale(1.01, 1.02); transition: filter 0.2s linear; }
+
+@keyframes AnimeImage { from { opacity: 0;
+    transform: translateY(100px); }
+  to { opacity: 1;
+    transform: translateY(0); } }

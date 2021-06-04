@@ -1,0 +1,13 @@
+.Pre_Loader{
+    width: 100%;
+    height: 100vh;
+    background: red;
+    position: fixed;
+    z-index: 2000;
+    overflow: hidden;
+}
+.Pre_load_close{
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: all 0.5s ease-in-out;
+}

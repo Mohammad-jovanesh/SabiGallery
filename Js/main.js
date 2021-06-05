@@ -23,7 +23,7 @@ const observer=new IntersectionObserver((intries,observer)=>
     intries.forEach(elm=>{
         if(elm.isIntersecting){
             elm.target.style.animation="AnimeImage 0.5s linear forwards"
-            console.log(elm.target)
+           
         }else {
             return;
         }
@@ -37,7 +37,7 @@ Image.forEach(img=>{
 // Modal Image take the src of image and show the Modal
 Image.forEach(img=>{
 img.addEventListener("click",(e)=>{
-    console.log(e.target.src)
+    console.log(e.target)
     Modal.style.display="flex";
     Modal.querySelector(".Modal_image").style.backgroundImage=`url(${e.target.src})`;
 })
@@ -47,3 +47,4 @@ img.addEventListener("click",(e)=>{
 ModalClose.addEventListener("click",()=>{
     Modal.style.display="none";
 })
+

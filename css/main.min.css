@@ -75,3 +75,59 @@ body { background: #000; }
 .Services_item_text { font-size: 1.5remd; text-align: center; padding: 1rem 2rem; }
 
 .Services_item_price { font-size: 2.2rem; font-weight: 800; color: #20c997; margin-top: 1.5rem; }
+
+.About { width: 100%; min-height: 90vh; padding: 1rem 5rem; color: #fff; }
+
+.About_heading { text-align: center; padding: 1rem; margin: 3rem auto 5rem; font-size: 5rem; }
+
+.About_Conatiner { width: 100%; display: flex; align-items: flex-start; justify-content: space-evenly; }
+
+.About_Conatiner .About_image { flex: 1 1 30rem; padding: 0rem 1rem 5rem; }
+
+.About_Conatiner .About_image img { width: 100%; height: 100%; object-fit: cover; }
+
+.About_Conatiner .About_text { flex: 1 1 30rem; color: #fff; padding-top: 2rem; padding-left: 20rem; padding-right: 5rem; font-size: 2rem; }
+
+.About_Conatiner .About_text h2 { margin-bottom: 3rem; }
+
+.Contact { width: 100%; min-height: 85vh; padding: 0rem 5rem; }
+
+.Contact_heading { color: #fff; text-align: center; font-size: 3rem; margin: 4rem 0; }
+
+.Contact_Container { width: 100%; display: flex; align-items: flex-start; justify-content: space-between; }
+
+.Contact_Container .Contact_Form { flex: 3 1 30rem; display: flex; align-items: center; justify-content: flex-end; padding-right: 10rem; }
+
+.Contact_Container .Contact_Form .Form { width: 60%; }
+
+.Contact_Container .Contact_Form .Form .Names { display: flex; align-items: center; justify-content: flex-start; }
+
+.Contact_Container .Contact_Form .Form label { display: inline-block; margin-bottom: 1rem; color: #fff; font-size: 1.5rem; }
+
+.Contact_Container .Contact_Form .Form .FName, .Contact_Container .Contact_Form .Form .LName, .Contact_Container .Contact_Form .Form .Email, .Contact_Container .Contact_Form .Form .Subject { padding: 1rem; min-height: 6rem; }
+
+.Contact_Container .Contact_Form .Form .FName input, .Contact_Container .Contact_Form .Form .LName input, .Contact_Container .Contact_Form .Form .Email input, .Contact_Container .Contact_Form .Form .Subject input { width: 100%; height: 4rem; font-size: 2rem; padding-left: 2rem; }
+
+.Contact_Container .Contact_Form .Form .FName { flex: 1 1 30rem; }
+
+.Contact_Container .Contact_Form .Form .LName { flex: 1 1 30rem; }
+
+.Contact_Container .Contact_Form .Form .Message { margin-bottom: 2rem; padding: 1rem; }
+
+.Contact_Container .Contact_Form .Form .Message .message_input { width: 100%; height: 20rem; resize: none; padding: 2rem; font-size: 2rem; }
+
+.Contact_Container .Contact_Form .Send_Btn { width: 60%; margin: 0 20%; padding: 1rem 3rem; background: #20c997; color: #fff; font-size: 2rem; font-weight: 800; }
+
+.Contact_Container .Contact_Address .Address, .Contact_Container .Contact_Address .Phone, .Contact_Container .Contact_Address .Email_Address { margin-bottom: 5rem; width: 100%; }
+
+.Contact_Container .Contact_Address .Address h2, .Contact_Container .Contact_Address .Phone h2, .Contact_Container .Contact_Address .Email_Address h2 { font-size: 3rem; margin-bottom: 1rem; color: #20c997; }
+
+.Contact_Container .Contact_Address { flex: 1 1 30rem; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-height: 60vh; padding-top: 6rem; }
+
+.Contact_Container .Contact_Address .Address_text { font-size: 2rem; width: 50%; }
+
+.Contact_Container .Contact_Address .Phone_text { width: 100%; font-size: 2rem; }
+
+.Contact_Container .Contact_Address .Email_Address_link { color: #fff; font-size: 3rem; transition: color 0.5s ease; }
+
+.Contact_Container .Contact_Address .Email_Address_link:hover { color: #20c997; transition: color 0.5s ease; }

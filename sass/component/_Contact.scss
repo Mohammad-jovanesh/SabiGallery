@@ -1,0 +1,141 @@
+.Contact{
+    width: 100%;
+    min-height: 85vh;
+    padding: 0rem 5rem;
+    
+    &_heading{
+        color: #fff;
+        text-align: center;
+        font-size: 3rem;
+        margin: 4rem 0 ;
+    }
+    &_Container{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .Contact_Form{
+            flex: 3 1 30rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10rem;
+            .Form{
+                width: 60%;
+                
+                
+
+            .Names{
+                
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            label{
+                display: inline-block;
+                margin-bottom: 1rem;
+                color: #fff;
+                font-size:1.5rem;
+            }
+            %SomeInput{
+                padding: 1rem;
+                min-height: 6rem;
+                input{
+                    width: 100%;
+                    height: 4rem;
+                    font-size: 2rem;
+                    padding-left: 2rem;
+                }
+            }
+            .FName{
+                @extend %SomeInput;
+                flex: 1 1 30rem;
+                
+                
+                
+            }
+            .LName{
+                @extend %SomeInput;
+                flex: 1 1 30rem;
+                
+            }
+            .Email{
+                @extend %SomeInput;
+            }
+            .Subject{
+                @extend %SomeInput;
+            }
+            .Message{
+                margin-bottom: 2rem;
+                padding: 1rem;
+               .message_input{
+                   width: 100%;
+                   height: 20rem;
+                   resize: none;
+                   padding: 2rem;
+                   font-size: 2rem;
+               }
+            }
+            }
+            .Send_Btn{
+                width: 60%;
+                margin: 0 20%;
+                padding: 1rem 3rem;
+                background: #20c997;
+                color: #fff;
+                font-size: 2rem;
+                font-weight: 800;
+            }
+            
+        }
+        %addressHeader{
+            margin-bottom: 5rem;
+            width: 100%;
+            h2{
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                color: #20c997;
+            }
+        }
+        .Contact_Address{
+            flex: 1 1 30rem;
+            
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 60vh;
+            padding-top: 6rem;
+            
+            .Address{
+                
+                @extend %addressHeader;
+                     &_text{
+                         font-size: 2rem;
+                         width: 50%;
+                     }
+            }
+            .Phone{
+                @extend %addressHeader;
+            &_text{
+                    width: 100%;
+                    font-size: 2rem;
+                }
+            }
+            .Email_Address{
+                @extend %addressHeader;
+                &_link{
+                    color:#fff;
+                    font-size: 3rem;
+                    transition: color 0.5s ease;
+                    &:hover{
+                        color:#20c997 ;
+                        transition: color 0.5s ease;
+                    }
+                }
+            }
+
+        }
+    }
+}

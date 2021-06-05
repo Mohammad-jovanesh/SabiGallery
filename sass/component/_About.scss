@@ -3,22 +3,44 @@
     min-height: 90vh;
     padding: 1rem 5rem;
     color: #fff;
+    @include Media (lg){
+        
+        .About_text{
+            padding: 5rem 1rem !important;
+        }
+    }
+    @include Media (md){
+        padding: 1rem 2rem;
+        &_heading{
+            font-size: 3rem !important;
+        }
+        .About_text{
+            padding: 2rem 2rem !important;
+            
+            h2{
+                text-align: center !important;
+                
+            }
+            p{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
     &_heading{
         text-align: center;
         padding: 1rem;
         margin: 3rem auto 5rem;
-        font-size: 5rem;
-        
-       
+        font-size: 4rem;
     }
     &_Conatiner{
         width: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: space-evenly;
-        
+        flex-wrap: wrap;
         .About_image{
-            flex: 1 1 30rem;
+            flex: 1 1 50rem;
             padding: 0rem 1rem 5rem;
 
             img{

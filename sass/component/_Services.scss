@@ -1,12 +1,23 @@
 .Services{
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-gap: 6rem;
     padding: 7rem 6rem;
+    @include Media(lg){
+     
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(3,1fr);
+    }
+    @include Media(md){
+     
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(6,1fr);
+    }
     &_item{
+      
         padding: 2rem 3rem;
         display: flex;
         flex-direction: column;

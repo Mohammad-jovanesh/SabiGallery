@@ -14,7 +14,7 @@ window.addEventListener("load",()=>{
 // define Option for Observer 
 const option ={
     root:null,
-    rootMargin:"-0px 0px -300px",
+    rootMargin:"-0px 0px -100px",
     threshold:0,
 }
 //creat a object from Observer class
@@ -47,4 +47,11 @@ img.addEventListener("click",(e)=>{
 ModalClose.addEventListener("click",()=>{
     Modal.style.display="none";
 })
-
+// ----------------------------------
+// 
+// Bnt_Burger 
+const Burger=document.querySelector(".Burger_btn")
+Burger.addEventListener("click",()=>{
+   document.querySelector(".nav").classList.toggle("Open")
+   Burger.classList.toggle("Closed")
+})

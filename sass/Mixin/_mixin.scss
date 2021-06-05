@@ -2,3 +2,21 @@
     color:rgb(141, 140, 140);
     transition: color 0.5s ease;
 }
+
+@mixin Media ($size){
+    @if($size == lg){
+        @media (max-width:1200px) {
+           @content 
+        }
+    }
+    @if($size == md){
+        @media (max-width:768px) {
+           @content 
+        }
+    }
+    @if($size == sm){
+        @media (max-width:480px) {
+           @content 
+        }
+    }
+}

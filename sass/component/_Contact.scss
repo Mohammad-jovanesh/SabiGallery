@@ -1,8 +1,25 @@
 .Contact{
     width: 100%;
-    min-height: 85vh;
+    min-height: 90vh;
     padding: 0rem 5rem;
-    
+    @include Media (lg){
+        &_Container{
+            .Contact_Form{
+                padding-right: 0 !important;
+                padding-bottom: 5rem;
+                .Form{
+                    width: 100% !important;}
+            }
+            .Contact_Address{
+                padding-left: 10rem !important;
+                .Address_text{
+                    width: 80% !important;
+                }
+            }
+        }
+       
+    }
+   
     &_heading{
         color: #fff;
         text-align: center;
@@ -14,8 +31,12 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        flex-wrap: wrap;
         .Contact_Form{
-            flex: 3 1 30rem;
+            @include Media(md){
+                order: 2;
+            }
+            flex: 3 1 50rem;
             display: flex;
             align-items: center;
             justify-content: flex-end;
@@ -85,6 +106,9 @@
                 color: #fff;
                 font-size: 2rem;
                 font-weight: 800;
+                border-color:#20c997 ;
+                outline: none;
+                cursor: pointer;
             }
             
         }
@@ -98,7 +122,19 @@
             }
         }
         .Contact_Address{
-            flex: 1 1 30rem;
+            @include Media(sm){
+                text-align: center;
+                padding-left: 1rem !important;
+                .Address{
+                   
+                    &_text{
+                        font-size: 2rem;
+                        width: 100% !important;
+                       
+                    }
+                }
+            }
+            flex: 1 1 50rem;
             
             color: #fff;
             display: flex;

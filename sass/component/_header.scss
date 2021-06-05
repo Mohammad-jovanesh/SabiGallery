@@ -1,12 +1,80 @@
 .header{
-    
     width: 100%;
     min-height: 10vh;
     padding: 5rem 3rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
+    @include  Media (lg){
+        .nav{
+              order: 3;
+              margin-top: 3rem;
+        }
+        .Social{
+           
+            padding-right: 0rem !important;
+        }
+    }
+    @include  Media (sm){
+        .nav{
+            &.Open{
+                left: 0% !important;
+                transition: left 0.5s ease;
+                .nav_item{
+                     animation: NavLink 1s ease-in-out forwards;
+                }
+                @for $x from 1 through 4 {
+                    .nav_item:nth-child(#{$x}){
+                         animation-delay: #{$x * 0.2}s;
+                    }
+                }
+            }
+            transition: left 0.5s ease;
+              position: fixed;
+              width: 100%;
+              min-height: 100vh;
+              background-color: #444;
+              left: 100%;
+              top: 0;
+              z-index: 1200;
+              margin-top: 0 !important;
+              .nav_list{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: space-between;
+                  
+                  height: 100vh !important;
+                  padding: 15rem 0rem 6rem;
+                  .nav_item{
+                      opacity: 0;
+                      width: 100%;
+                      text-align: center;
+                      margin-left:0 !important;
+                      padding: 2rem 1rem;
+                      .nav_link{
+                          font-size: 3.5rem !important;
+                      }
+                  }
+                  
+            }
+        }
+        .Social{
+            margin-top:5rem ;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .Social_link {
+                margin-right: 0 !important;
+            }
+
+        }
+        .Logo{
+            text-align: center;
+        }
+       
+    }
     .Logo{
         flex: 1 1 30rem;
         color: #fff;
@@ -14,7 +82,7 @@
         font-weight: 800;
     }
     .nav{
-        flex: 1 1 30rem;
+        flex: 1 1 50rem;
         text-align: center;
         text-transform: uppercase;
         .nav_list{
@@ -46,5 +114,17 @@
                 @include color_hover_link;
             }
         }
+    }
+}
+
+@keyframes NavLink {
+    from{
+         transform: translateX(200px);
+         opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+
     }
 }
